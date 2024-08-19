@@ -27,7 +27,7 @@ public class SignupController {
 		
 	}
 	
-	@PostMapping("/verify")
+	@PostMapping("/verifyotp")
 	public ResponseEntity<ResponseDto> verifyOtp( @RequestParam("otp") String otp  )
 	{
 		
