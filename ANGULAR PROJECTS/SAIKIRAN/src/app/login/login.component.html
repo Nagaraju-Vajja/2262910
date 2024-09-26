@@ -1,0 +1,18 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <label for="username">Username</label>
+    <input type="text" id="username" [(ngModel)]="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="additional-links">
+    <p><a routerLink="/signup">Sign Up</a></p>
+    <p><a routerLink="/forgot-password">Forgot Password?</a></p>
+  </div>
+  <div class="alert alert-danger mt-3" *ngIf="errorMessage">{{ errorMessage }}</div>
+</div>

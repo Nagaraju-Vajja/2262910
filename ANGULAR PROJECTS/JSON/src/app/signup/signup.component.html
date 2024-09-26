@@ -1,0 +1,29 @@
+<!-- signup.component.html -->
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" formControlName="firstname">
+    </div>
+  
+    <div class="form-group">
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" formControlName="lastname">
+    </div>
+  
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" formControlName="dob">
+    </div>
+  
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" formControlName="username">
+    </div>
+  
+    <div *ngIf="signupForm.hasError('requiredFields') && signupForm.touched" class="general-error-message">
+      Please fill all required details.
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  

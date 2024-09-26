@@ -1,0 +1,11 @@
+
+.logout-btn {
+    color: #df1b94; 
+    text-decoration: none; 
+    cursor: pointer; 
+    text-align: right;
+  }
+
+  .logout-btn:hover{
+        text-decoration: underline;  
+  }

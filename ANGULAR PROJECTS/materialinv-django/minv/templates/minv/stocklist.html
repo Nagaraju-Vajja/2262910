@@ -1,0 +1,28 @@
+{% extends 'minv/base.html' %}
+
+{% block content %}
+        <div class="container mt-4">
+            <h1 style="color: #0a3a68; font-size: 2.0rem;  text-align:center;">CAPSOL INVENTORY REPORT</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Stock</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for mt in materials %}
+                    <tr>
+                            <td>{{mt.key}}</td>
+                            <td>{{mt.quantity}}</td>
+                            <td>${{mt.price}}</td>
+                            <td>${{mt.value}}</td>
+                    </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+{% endblock %}

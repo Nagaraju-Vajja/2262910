@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+{% if not user.is_authenticated %}
+    <meta http-equiv="REFRESH" content="0;url=/accounts/login/">
+{% endif %}
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Capsol</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@jarstone/dselect/dist/css/dselect.css">
+    <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
+    <script>
+        dselect(document.querySelector('#id_material'), {
+            search: true
+        });
+    </script>
+
+    <style>
+
+        body {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+    </style>
+</head>
+<body>
+    <!--Main Navigation-->
+    <header>
+        <nav
+             id="main-navbar"
+             class="navbar navbar-expand-lg navbar-dark bg-light fixed-top shadow-sm"
+             >
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#sidebarMenu"
+                    aria-controls="sidebarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+              <i class="fas fa-bars"></i>
+            </button>
+
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+              {% load static %}
+              <img
+                   src="{% static 'minv/capsol_icon.jpeg' %}"
+                   height="25"
+                   alt=""
+                   loading="lazy"
+              />
+            </a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #007bff;" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #007bff;" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #007bff;" href="#">Contact Us</a>
+                    </li>
+                </ul>
+              </div>
+
+
+
+            <!-- Right links -->
+            <ul class="navbar-nav ms-auto d-flex flex-row">
+
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #007bff;" href="/accounts/logout">Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #007bff;" href="/accounts/login">Login</a>
+                    </li>
+                {% endif %}
+
+            </ul>
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+
+        <nav
+             id="sidebarMenu"
+             class="collapse d-lg-block sidebar collapse bg-white"
+             >
+          <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+              <a
+                 href="/minv/entry/"
+                 class="list-group-item list-group-item-action py-2 ripple"
+                 aria-current="true"
+                 >
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i
+                  ><span>Create Entry</span>
+              </a>
+              <a
+                 href="/minv/stock/"
+                 class="list-group-item list-group-item-action py-2 ripple"
+                 >
+                <i class="fas fa-chart-area fa-fw me-3"></i
+                  ><span>Stock Report</span>
+              </a>
+                 <a
+                 href="/minv/material_list/"
+                 class="list-group-item list-group-item-action py-2 ripple"
+                 >
+                <i class="fas fa-chart-area fa-fw me-3"></i
+                  ><span>Create Materials_list</span>
+              </a>
+
+            </div>
+          </div>
+        </nav>
+
+    </header>
+        <main style="margin-top: 58px;">
+            <div class="container pt-4" >
+
+                {% if user.is_authenticated %}
+                        {% block content %}
+                        {% endblock %}
+                {% else %}
+                    {% block logincontent %}
+                    <p>You are not logged in</p>
+                    <a href="{% url 'login' %}">Log In</a>
+                    {% endblock %}
+                {% endif %}
+            </div>
+        </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

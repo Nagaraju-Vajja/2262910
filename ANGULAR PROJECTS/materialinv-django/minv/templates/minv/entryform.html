@@ -1,0 +1,17 @@
+{% extends 'minv/base.html' %}
+
+{% block content %}
+            <div class="container mt-4">
+                <h2 style="color: #007bff; font-weight:100; text-align:center;">CAPSOL MATERIAL ENTRY FORM</h2>
+            </div>
+            <div >
+                <form action="/minv/entry/" method="post">
+                    {% csrf_token %}
+                    {% load crispy_forms_tags %}
+                    {{ form|crispy }}
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+{% endblock %}
+

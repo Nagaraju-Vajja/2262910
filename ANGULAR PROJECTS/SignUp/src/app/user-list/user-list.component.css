@@ -1,0 +1,27 @@
+/* user-list.component.css */
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Styling for table header */
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling for table cells */
+  td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Add some margin to the entire component */
+  :host {
+    display: block;
+    margin: 20px;
+  }
+  
