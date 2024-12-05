@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/cloud/gcp/autoconfigure/logging/logback-appender.xml" />
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+    <include resource="org/springframework/cloud/gcp/autoconfigure/logging/logback-json-appender.xml" />
+
+    <logger name="com.netflix" level="ERROR" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="com.macys.uop.order.ordercollectorchestrator.utils.MaskingPatternLayout">
+                <patternsProperty>(acctNbr)|(privateData.{6,15}value)|(accountNumber)|(egcNumberAndCid>)|(x-macys-apikey" : )</patternsProperty>
+                <pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNC-CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="CONSOLE" />
+    </appender>
+
+    <appender name="ASYNC-CONSOLE-JSON" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="CONSOLE_JSON" />
+    </appender>
+
+    <springProfile name="local">
+        <logger name="org.springframework" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE"/>
+        </logger>
+        <logger name="com.macys.uop.order.ordercollectorchestrator" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE"/>
+        </logger>
+        <root level="INFO">
+            <appender-ref ref="ASYNC-CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="gcp-dev | gcp-qa | gcp-uat | gcp-prod">
+        <logger name="org.springframework" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE-JSON"/>
+        </logger>
+        <logger name="com.macys.uop.order.ordercollectorchestrator" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE-JSON"/>
+        </logger>
+        <root level="INFO">
+            <appender-ref ref="ASYNC-CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="gcp-perf">
+        <logger name="org.springframework" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE-JSON"/>
+        </logger>
+        <logger name="com.macys.uop.order.ordercollectorchestrator" level="INFO" additivity="false">
+            <appender-ref ref="ASYNC-CONSOLE-JSON"/>
+        </logger>
+        <root level="INFO">
+            <appender-ref ref="ASYNC-CONSOLE-JSON"/>
+        </root>
+    </springProfile>
+
+</configuration>

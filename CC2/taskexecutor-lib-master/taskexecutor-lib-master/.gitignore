@@ -1,0 +1,12 @@
+**/.gitignore
+**/.classpath
+**/.project
+**/target
+**/log
+**/.settings
+**/*.jar
+**/.factorypath
+!/.gitignore
+.idea/
+*.iml
+**/bin/

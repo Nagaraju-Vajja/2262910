@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.macys.uop</groupId>
+		<artifactId>composite-parent</artifactId>
+		<version>2.0.62</version>
+	</parent>
+
+	<groupId>com.macys.uop</groupId>
+	<artifactId>ordercollectorchestrator</artifactId>
+	<version>2.0.124</version>
+	<packaging>pom</packaging>
+	<name>ordercollectorchestrator</name>
+	
+	<properties>
+        <project.version>1.0.0</project.version>
+        <java.version>11</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<sonar.exclusions>
+ 	          	  **/utils/*.java,
+            	  **/model/*.java,
+				  **/config/*.java,
+				  **/Application.java,
+				  **/ApplicationConfiguration.java,
+				  **/IAuditOnsuccessPublisher.java,
+				  **/ICollectorderFraudacknowledgementPublisher.java,
+				  **/IErrorprocessorErrorrequestPublisher.java,
+				  **/IEventOnsuccessPublisher.java,
+			      **/IOrdercreationOnsuccessPublisher.java,
+				  **/IAuditlogService.java,
+				  **/IErrorprocessorService.java,
+				  **/IOrderCreationSuccessPublishHelper.java,
+				  **/IOrderFraudacknowledgmentPublishHelper.java,
+			      **/IEventLogService.java,
+			      **/OrdercollectorchestratorServiceImpl.java,
+				  **/PickUpOrderEnhanceServiceImpl.java,
+			      **/ErrorprocessorServiceImpl.java
+		</sonar.exclusions>
+    </properties>    
+    
+    <distributionManagement>
+        <repository>
+            <id>MacysNexus</id>
+            <layout>default</layout>
+            <name>Macys Nexus Deploy Repo</name>
+            <url>${releaseDistributionLocaltion}</url>
+        </repository>
+        <snapshotRepository>
+            <id>MacysNexus</id>
+            <layout>default</layout>
+            <uniqueVersion>false</uniqueVersion>
+            <name>Macys Nexus Deploy Repo</name>
+            <url>${snapshotDistributionLocaltion}</url>
+        </snapshotRepository>
+        <site>
+            <id>ReportsLocation</id>
+            <name>Report Locations</name>
+            <url>${siteDistributionLocaltion}</url>
+        </site>
+    </distributionManagement>
+    
+	<modules>
+		<module>service</module>
+		<module>functional-test</module>
+		<module>config</module>
+	</modules>
+	
+</project>

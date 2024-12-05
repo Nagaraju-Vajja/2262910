@@ -1,0 +1,14 @@
+{
+  "createdBy": "ordercollectorchestrator",
+  "lastUpdatedBy": "ordercollectorchestrator",
+  "lockId": "a337be55-d92b-4288-b836-ead6d68335fa",
+  "lockType": "FRAUD_LOCK",
+  "lockedEntity": "FRAUD",
+  "lockedEntityId": "2RJEKSHG7E02L",
+  "modifiedSystem": "UOP",
+  "orderId": "2RJEKSHG7E02L",
+  "reasonCode": "L0007",
+  "reasonDesc": "Fraud lock created as Fraud response pending",
+  "sourceSystem": "SITE",
+  "transactionId": "LOCK_CREATE"
+}

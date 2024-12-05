@@ -1,0 +1,662 @@
+{
+  "action": "ADD",
+  "associateDetails": [
+    {
+      "associateId": "1000081"
+    }
+  ],
+  "billingInfo": {
+    "addressLine1": "6005 STATE BRIDGE ROAD",
+    "city": "DULUTH",
+    "country": "USA",
+    "countryCode": "840",
+    "customerId": "52559147",
+    "dayPhone": "9901123532",
+    "emailId": "TEST@APPROVE.COM",
+    "firstName": "DEVA",
+    "lastName": "S",
+    "secondaryPhone": "9901123532",
+    "state": "GA",
+    "zipCode": "30096",
+    "homePhn": "0"
+  },
+  "customerOrderId": "2450515597992",
+  "loyaltyDetails": [],
+  "maxStatusCode": "1000",
+  "minStatusCode": "1000",
+  "orderChannelDivision": "72",
+  "orderChannelStore": "139",
+  "orderDate": "2023-03-01T07:07:56.601000000Z",
+  "orderDeviceIp": "11:120:80:119",
+  "orderId": "2PC2X6KQ417ID",
+  "orderLines": [
+    {
+      "action": "ADD",
+      "deliverySubService": "C",
+      "deliveryType": "PICKUP",
+      "fulfillmentType": "BOPS",
+      "giftDetails": {
+        "giftWrapCode": "N"
+      },
+      "groupCode": "PRODUCT",
+      "hidePriceFlag": "false",
+      "lineId": 1,
+      "lineType": "PRODUCT",
+      "optInSmsPhone": "9901123532",
+      "optInSmsFlag": true,
+      "orderLineCharges": [
+        {
+          "chargeAmount": "2.43",
+          "chargeCategory": "CHARGE",
+          "chargeName": "S1BASE2024010516123710",
+          "chargePerLine": "0.01",
+          "chargePerUnit": "1.21",
+          "chargeType": "BASE"
+        }
+      ],
+      "orderLineStatuses": [
+        {
+          "action": "ADD",
+          "estimatedDeliveryTs": "2023-03-01T23:59:59.999999999Z",
+          "estimatedShipTs": "2023-03-01T17:33:40.247000000Z",
+          "fulfillmentChannel": "STR1",
+          "fulfillmentDivision": "72",
+          "fulfillmentLocation": "1476",
+          "fulfillmentStore": "55",
+          "groupingId": "1",
+          "lineRefNumber": "1",
+          "refShipmentId": "1",
+          "pickupDivision": "72",
+          "pickupLocation": "1476",
+          "pickupChannel": "STR",
+          "pickupStore": "55",
+          "statusCode": "1000",
+          "statusDesc": "Created",
+          "statusQuantity": 2,
+          "totalQuantity": 2,
+          "requestedShipTs": "2023-03-01T17:33:40.247000000Z",
+          "requestedDeliveryTs": "2023-03-01T23:59:59.999999999Z"
+        }
+      ],
+      "orderLineTaxExemptions": [
+        {
+          "taxExemptFlag": "N"
+        }
+      ],
+      "orderLineTaxes": [
+        {
+          "chargeCategory": "CHARGE",
+          "chargeName": "S1MERCHANDISE2024010516123710",
+          "chargeType": "MERCHANDISE",
+          "tax": "0.66",
+          "taxName": "S1MERCHANDISE2024010516123710",
+          "taxPerLine": "0.00",
+          "taxPerUnit": "0.33"
+        }
+      ],
+      "orderedQty": 2,
+      "originalOrderedQty": 2,
+      "originalUnitPrice": "10.99",
+      "registryId": "0",
+      "reservationId": "8851535",
+      "unitPrice": "10.99",
+      "upcNumber": "98087824916",
+      "registryBarcode": "N",
+      "addressDetails": [
+        {
+          "addressId": "1ZNV1GVUBTBXG",
+          "seqNo": "12",
+          "type": "PICKUPLOCATION",
+          "addressLine1": "8000 TYSONS CORNER CTR",
+          "city": "MCLEAN",
+          "country": "USA",
+          "countryCode": "840",
+          "deliveryIndicator": "B",
+          "state": "VA",
+          "zipCode": "22102",
+          "createdBy": "address",
+          "createdTs": "2023-09-06T05:19:50.230000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-09-06T05:19:50.271060000Z"
+        },
+        {
+          "addressId": "2DCLRN7PUOG6M",
+          "seqNo": "14",
+          "type": "ALTPICKUP",
+          "customerId": "52557750",
+          "dayPhone": "4134220645",
+          "emailId": "TEST@APPROVE.COM",
+          "firstName": "MANIKANDAN",
+          "lastName": "S",
+          "secondaryPhone": "6784747002",
+          "createdBy": "address",
+          "createdTs": "2023-02-21T08:42:10.539000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-02-21T08:42:10.581575000Z"
+        }
+      ],
+      "orderChannelDivision": "72",
+      "marketPlaceDetails": {},
+      "siteItemId": "1"
+    },
+    {
+      "action": "ADD",
+      "deliverySubService": "C",
+      "deliveryType": "PICKUP",
+      "fulfillmentType": "BOPS",
+      "giftDetails": {
+        "giftWrapCode": "N"
+      },
+      "groupCode": "PRODUCT",
+      "hidePriceFlag": "false",
+      "lineId": 2,
+      "lineType": "PRODUCT",
+      "optInSmsPhone": "9901123532",
+      "optInSmsFlag": true,
+      "orderLineCharges": [
+        {
+          "chargeAmount": "2.43",
+          "chargeCategory": "CHARGE",
+          "chargeName": "S1BASE2024010516123721",
+          "chargePerLine": "0.01",
+          "chargePerUnit": "1.21",
+          "chargeType": "BASE"
+        }
+      ],
+      "orderLineStatuses": [
+        {
+          "action": "ADD",
+          "estimatedDeliveryTs": "2023-03-01T23:59:59.999999999Z",
+          "estimatedShipTs": "2023-03-01T17:33:40.247000000Z",
+          "fulfillmentChannel": "STR1",
+          "fulfillmentDivision": "72",
+          "fulfillmentLocation": "1476",
+          "fulfillmentStore": "55",
+          "groupingId": "1",
+          "lineRefNumber": "2",
+          "refShipmentId": "1",
+          "pickupDivision": "72",
+          "pickupLocation": "1476",
+          "pickupChannel": "STR",
+          "pickupStore": "55",
+          "statusCode": "1000",
+          "statusDesc": "Created",
+          "statusQuantity": 2,
+          "totalQuantity": 2,
+          "requestedShipTs": "2023-03-01T17:33:40.247000000Z",
+          "requestedDeliveryTs": "2023-03-01T23:59:59.999999999Z"
+        }
+      ],
+      "orderLineTaxExemptions": [
+        {
+          "taxExemptFlag": "N"
+        }
+      ],
+      "orderLineTaxes": [
+        {
+          "chargeCategory": "CHARGE",
+          "chargeName": "S1MERCHANDISE2024010516123720",
+          "chargeType": "MERCHANDISE",
+          "tax": "0.66",
+          "taxName": "S1MERCHANDISE2024010516123720",
+          "taxPerLine": "0.00",
+          "taxPerUnit": "0.33"
+        }
+      ],
+      "orderedQty": 2,
+      "originalOrderedQty": 2,
+      "registryId": "0",
+      "reservationId": "8851535",
+      "unitPrice": "10.99",
+      "upcNumber": "98087816515",
+      "registryBarcode": "N",
+      "addressDetails": [
+        {
+          "addressId": "1ZNV1GVUBTBXG",
+          "seqNo": "22",
+          "type": "PICKUPLOCATION",
+          "addressLine1": "8000 TYSONS CORNER CTR",
+          "city": "MCLEAN",
+          "country": "USA",
+          "countryCode": "840",
+          "deliveryIndicator": "B",
+          "state": "VA",
+          "zipCode": "22102",
+          "createdBy": "address",
+          "createdTs": "2023-09-06T05:19:50.230000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-09-06T05:19:50.271060000Z"
+        },
+        {
+          "addressId": "2DCLRN7PUOG6M",
+          "seqNo": "24",
+          "type": "ALTPICKUP",
+          "customerId": "52557750",
+          "dayPhone": "4134220645",
+          "emailId": "TEST@APPROVE.COM",
+          "firstName": "MANIKANDAN",
+          "lastName": "S",
+          "secondaryPhone": "6784747002",
+          "createdBy": "address",
+          "createdTs": "2023-02-21T08:42:10.539000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-02-21T08:42:10.581575000Z"
+        }
+      ],
+      "orderChannelDivision": "72",
+      "marketPlaceDetails": {},
+      "siteItemId": "2"
+    },
+    {
+      "action": "ADD",
+      "deliveryMethod": "GROUND",
+      "deliverySubService": "C",
+      "deliveryType": "SHIPPING",
+      "fulfillmentType": "STH",
+      "giftDetails": {
+        "giftWrapCode": "N"
+      },
+      "groupCode": "PRODUCT",
+      "hidePriceFlag": "false",
+      "lineId": 3,
+      "lineType": "PRODUCT",
+      "optInSmsPhone": "9901123532",
+      "optInSmsFlag": true,
+      "orderLineCharges": [],
+      "orderLineStatuses": [
+        {
+          "action": "ADD",
+          "estimatedDeliveryTs": "2023-03-10T23:59:59.999999999Z",
+          "estimatedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "fulfillmentChannel": "POOL",
+          "fulfillmentDivision": "72",
+          "fulfillmentLocation": "6230",
+          "fulfillmentStore": "852",
+          "groupingId": "1",
+          "lineRefNumber": "3",
+          "refShipmentId": "2",
+          "statusCode": "1000",
+          "statusDesc": "Created",
+          "statusQuantity": 2,
+          "totalQuantity": 2,
+          "requestedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "requestedDeliveryTs": "2023-03-10T23:59:59.999999999Z"
+        }
+      ],
+      "orderLineTaxExemptions": [
+        {
+          "taxExemptFlag": "N"
+        }
+      ],
+      "orderLineTaxes": [
+        {
+          "chargeCategory": "CHARGE",
+          "chargeName": "S2MERCHANDISE2024010516123730",
+          "chargeType": "MERCHANDISE",
+          "tax": "1.56",
+          "taxName": "S2MERCHANDISE2024010516123730",
+          "taxPerLine": "0.00",
+          "taxPerUnit": "0.78"
+        }
+      ],
+      "orderedQty": 2,
+      "originalOrderedQty": 2,
+      "registryId": "0",
+      "reservationId": "8851535",
+      "shippingInfo": {
+        "addressLine1": "8000 TYSONS CORNER CTR",
+        "city": "MCLEAN",
+        "country": "USA",
+        "countryCode": "840",
+        "customerId": "52557750",
+        "dayPhone": "4134220645",
+        "emailId": "TEST@APPROVE.COM",
+        "firstName": "MANIKANDAN",
+        "lastName": "S",
+        "secondaryPhone": "6784747002",
+        "state": "VA",
+        "zipCode": "22102"
+      },
+      "unitPrice": "25.99",
+      "upcNumber": "32677719824",
+      "registryBarcode": "N",
+      "addressDetails": [
+        {
+          "addressId": "26ZHAKIDR50MK",
+          "seqNo": "31",
+          "type": "SHIPPING",
+          "addressLine1": "8000 TYSONS CORNER CTR",
+          "city": "MCLEAN",
+          "country": "USA",
+          "countryCode": "840",
+          "customerId": "52557750",
+          "dayPhone": "4134220645",
+          "emailId": "TEST@APPROVE.COM",
+          "firstName": "MANIKANDAN",
+          "lastName": "S",
+          "secondaryPhone": "6784747002",
+          "state": "VA",
+          "zipCode": "22102",
+          "createdBy": "address",
+          "createdTs": "2023-03-13T04:32:15.131000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-03-13T04:32:15.169759000Z"
+        }
+      ],
+      "orderChannelDivision": "72",
+      "marketPlaceDetails": {},
+      "siteItemId": "3"
+    },
+    {
+      "action": "ADD",
+      "deliveryMethod": "GROUND",
+      "deliverySubService": "C",
+      "deliveryType": "SHIPPING",
+      "fulfillmentType": "STH",
+      "giftDetails": {
+        "giftWrapCode": "N"
+      },
+      "groupCode": "PRODUCT",
+      "hidePriceFlag": "false",
+      "lineId": 4,
+      "lineType": "PRODUCT",
+      "optInSmsPhone": "9901123532",
+      "optInSmsFlag": true,
+      "orderLineCharges": [],
+      "orderLineStatuses": [
+        {
+          "action": "ADD",
+          "estimatedDeliveryTs": "2023-03-09T23:59:59.999999999Z",
+          "estimatedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "fulfillmentChannel": "STR1",
+          "fulfillmentDivision": "72",
+          "fulfillmentLocation": "2450",
+          "fulfillmentStore": "23",
+          "groupingId": "1",
+          "lineRefNumber": "4",
+          "refShipmentId": "3",
+          "statusCode": "1000",
+          "statusDesc": "Created",
+          "statusQuantity": 2,
+          "totalQuantity": 2,
+          "requestedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "requestedDeliveryTs": "2023-03-09T23:59:59.999999999Z"
+        }
+      ],
+      "orderLineTaxExemptions": [
+        {
+          "taxExemptFlag": "N"
+        }
+      ],
+      "orderLineTaxes": [
+        {
+          "chargeCategory": "CHARGE",
+          "chargeName": "S3MERCHANDISE2024010516123740",
+          "chargeType": "MERCHANDISE",
+          "tax": "1.56",
+          "taxName": "S3MERCHANDISE2024010516123740",
+          "taxPerLine": "0.00",
+          "taxPerUnit": "0.78"
+        }
+      ],
+      "orderedQty": 2,
+      "originalOrderedQty": 2,
+      "registryId": "0",
+      "reservationId": "8851535",
+      "shippingInfo": {
+        "addressLine1": "8000 TYSONS CORNER CTR",
+        "city": "MCLEAN",
+        "country": "USA",
+        "countryCode": "840",
+        "customerId": "52557750",
+        "dayPhone": "4134220645",
+        "emailId": "TEST@APPROVE.COM",
+        "firstName": "MANIKANDAN",
+        "lastName": "S",
+        "secondaryPhone": "6784747002",
+        "state": "VA",
+        "zipCode": "22102"
+      },
+      "unitPrice": "25.99",
+      "upcNumber": "609372915549",
+      "registryBarcode": "N",
+      "addressDetails": [
+        {
+          "addressId": "26ZHAKIDR50MK",
+          "seqNo": "41",
+          "type": "SHIPPING",
+          "addressLine1": "8000 TYSONS CORNER CTR",
+          "city": "MCLEAN",
+          "country": "USA",
+          "countryCode": "840",
+          "customerId": "52557750",
+          "dayPhone": "4134220645",
+          "emailId": "TEST@APPROVE.COM",
+          "firstName": "MANIKANDAN",
+          "lastName": "S",
+          "secondaryPhone": "6784747002",
+          "state": "VA",
+          "zipCode": "22102",
+          "createdBy": "address",
+          "createdTs": "2023-03-13T04:32:15.131000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-03-13T04:32:15.169759000Z"
+        }
+      ],
+      "orderChannelDivision": "72",
+      "marketPlaceDetails": {},
+      "siteItemId": "4"
+    },
+    {
+      "action": "ADD",
+      "deliveryMethod": "GROUND",
+      "deliverySubService": "C",
+      "deliveryType": "SHIPPING",
+      "fulfillmentType": "STH",
+      "giftDetails": {
+        "giftWrapCode": "N"
+      },
+      "groupCode": "PRODUCT",
+      "hidePriceFlag": "false",
+      "lineId": 5,
+      "lineType": "PRODUCT",
+      "optInSmsPhone": "9901123532",
+      "optInSmsFlag": true,
+      "orderLineCharges": [],
+      "orderLineStatuses": [
+        {
+          "action": "ADD",
+          "estimatedDeliveryTs": "2023-03-09T23:59:59.999999999Z",
+          "estimatedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "fulfillmentChannel": "DROPSHIP",
+          "fulfillmentDivision": "72",
+          "fulfillmentLocation": "6300",
+          "fulfillmentStore": "158",
+          "groupingId": "1",
+          "lineRefNumber": "5",
+          "refShipmentId": "3",
+          "statusCode": "1000",
+          "statusDesc": "Created",
+          "statusQuantity": 2,
+          "totalQuantity": 2,
+          "requestedShipTs": "2023-03-01T23:59:59.999999999Z",
+          "requestedDeliveryTs": "2023-03-09T23:59:59.999999999Z"
+        }
+      ],
+      "orderLineTaxExemptions": [
+        {
+          "taxExemptFlag": "N"
+        }
+      ],
+      "orderLineTaxes": [
+        {
+          "chargeCategory": "CHARGE",
+          "chargeName": "S3MERCHANDISE2024010516123750",
+          "chargeType": "MERCHANDISE",
+          "tax": "1.56",
+          "taxName": "S3MERCHANDISE2024010516123750",
+          "taxPerLine": "0.00",
+          "taxPerUnit": "0.78"
+        }
+      ],
+      "orderedQty": 2,
+      "originalOrderedQty": 2,
+      "registryId": "0",
+      "reservationId": "8851535",
+      "shippingInfo": {
+        "addressLine1": "8000 TYSONS CORNER CTR",
+        "city": "MCLEAN",
+        "country": "USA",
+        "countryCode": "840",
+        "customerId": "52557750",
+        "dayPhone": "4134220645",
+        "emailId": "TEST@APPROVE.COM",
+        "firstName": "MANIKANDAN",
+        "lastName": "S",
+        "secondaryPhone": "6784747002",
+        "state": "VA",
+        "zipCode": "22102"
+      },
+      "unitPrice": "25.99",
+      "upcNumber": "4011417069487",
+      "registryBarcode": "N",
+      "addressDetails": [
+        {
+          "addressId": "26ZHAKIDR50MK",
+          "seqNo": "51",
+          "type": "SHIPPING",
+          "addressLine1": "8000 TYSONS CORNER CTR",
+          "city": "MCLEAN",
+          "country": "USA",
+          "countryCode": "840",
+          "customerId": "52557750",
+          "dayPhone": "4134220645",
+          "emailId": "TEST@APPROVE.COM",
+          "firstName": "MANIKANDAN",
+          "lastName": "S",
+          "secondaryPhone": "6784747002",
+          "state": "VA",
+          "zipCode": "22102",
+          "createdBy": "address",
+          "createdTs": "2023-03-13T04:32:15.131000000Z",
+          "lastUpdatedBy": "address",
+          "lastUpdatedTs": "2023-03-13T04:32:15.169759000Z"
+        }
+      ],
+      "orderChannelDivision": "72",
+      "marketPlaceDetails": {},
+      "siteItemId": "5"
+    }
+  ],
+  "orderLocation": "1295",
+  "orderStatus": "Created",
+  "orderStatusTs": "2024-01-05T10:42:42.326000000Z",
+  "payments": [
+    {
+      "accountFormat": "I",
+      "accountReference": "6011000000000000",
+      "cardIssuer": "D",
+      "orderType": "SALE",
+      "paymentTransactions": [
+        {
+          "transactionType": "AUTHORIZATION",
+          "status": "open",
+          "amountTendered": 210.76,
+          "universalPaymentBlock": {
+            "privateData": {
+              "value": "***********************************************************************/****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "version": "04.000.0000"
+            },
+            "publicData": {
+              "acctFormat": "IRN",
+              "acctNbr": "****************",
+              "aesInfo": {
+                "aesDivision": "MACYS",
+                "aesKeyVersion": "21230",
+                "aesStoreNbr": "139"
+              },
+              "amount": "21076",
+              "approvalCode": "633729",
+              "authAction": "SALE",
+              "authExpirationDateCCYYMMDD": "20241208",
+              "cardIssuer": "DISCOVER",
+              "originInfo": {
+                "division": "MACYS",
+                "origTransDateCCYYMMDD": "20210818",
+                "origTransTimeHHMMSS": "62800",
+                "storeNbr": "139"
+              },
+              "result": "APPROVED",
+              "serviceDataList": [
+                {
+                  "id": "invalidCidFlag",
+                  "value": "M"
+                },
+                {
+                  "id": "vantivRespCode",
+                  "value": "00 - Transaction Approved"
+                },
+                {
+                  "id": "acquirerReferenceId",
+                  "value": "212300062800280"
+                },
+                {
+                  "id": "avsResult",
+                  "value": "Y"
+                },
+                {
+                  "id": "discoverData",
+                  "value": "00300001234501100201101200000000"
+                },
+                {
+                  "id": "raw3rdPartyAvsIndicator",
+                  "value": "Y"
+                },
+                {
+                  "id": "scmHost",
+                  "value": "11.243.207.164"
+                },
+                {
+                  "id": "scmType",
+                  "value": "MIDTIER"
+                },
+                {
+                  "id": "scmJbossInstance",
+                  "value": "app_eps_dev1"
+                }
+              ],
+              "tenderType": "BANKCARD",
+              "version": "04.000.0000"
+            }
+          },
+          "result": "APPROVED"
+        }
+      ],
+      "tenderType": "BANKCARD"
+    }
+  ],
+  "sellingChannelType": "BCOM",
+  "sourceChannel": "SITE",
+  "sourceSystem": "MCHECKOUT",
+  "transactionId": "ORDER_CREATED",
+  "profileId": "MIXED",
+  "addressDetails": [
+    {
+      "addressId": "2D3ZBX1TLHHRY",
+      "type": "BILLING"
+    }
+  ],
+  "partnerOrderId": "2450515597992",
+  "addNotes": [],
+  "orderCharges": [],
+  "orderTaxes": [],
+  "customerPreferences": [
+    {
+      "name": "PickUpPerson",
+      "value": "AltPickUp",
+      "type": "PickUp"
+    }
+  ],
+  "orderPurpose": "SALE",
+  "originalSaleOrderId": "2PC2X6KQ417ID"
+}

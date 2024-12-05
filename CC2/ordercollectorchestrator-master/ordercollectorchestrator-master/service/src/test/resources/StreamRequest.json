@@ -1,0 +1,115 @@
+{
+  "sellerOrderId": "Z789900",
+  "orderDate": "2021-11-24T13:50:25.241Z",
+  "sellingChannelType": "MCOM",
+  "orderChannelDivision": "71",
+  "orderChannelStore": "128",
+  "associateDetails": [
+    {
+      "associateId": "71115670"
+    }
+  ],
+  "loyaltyDetails": [],
+  "payments": [],
+  "orderLines": [
+    {
+      "lineId": 1,
+      "reservationId": "1436261491",
+      "fulfillmentType": "POOL",
+      "marketingPartnerId": "ZOLA",
+      "orderedQty": "1",
+      "originalOrderedQty": "1",
+      "deliveryMethod": "Ground",
+      "deliveryType": "Shipping",
+      "associateDetails": [
+        {
+          "associateId": "71115670"
+        }
+      ],
+      "sellingChannelType": "MCOM",
+      "shippingInfo": {
+        "firstName": "Jay",
+        "lastName": "Smith",
+        "addressLine1": "7600 Main Avenue",
+        "addressLine2": "H9",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zipCode": "19118",
+        "country": "US",
+        "countryCode": "123",
+        "mobilePhone": "6102836927"
+      },
+      "unitPrice": "500",
+      "orderLineCharges": [
+        {
+          "chargeCategory": "DISCOUNT",
+          "chargeType": "DISCOUNT",
+          "chargeName": "From Zola",
+          "chargePerUnit": "4.10",
+          "chargePerLine": "4.10",
+          "chargeAmount": "4.10",
+          "associateId": "7100027"
+        }
+      ],
+      "orderLineTaxes": [],
+      "orderLineTaxExcemptions": [],
+      "upcNumber": "96018061188",
+      "productAdditionalAttributes": {
+        "productDesc": "Lenox Federal Platinum All Purpose Bowl"
+      },
+      "orderHoldTypes": [],
+      "orderLineStatuses": []
+    },
+    {
+      "lineId": 2,
+      "reservationId": "1436261492",
+      "fulfillmentType": "POOL",
+      "marketingPartnerId": "ZOLA",
+      "orderedQty": "1",
+      "originalOrderedQty": "1",
+      "deliveryMethod": "Ground",
+      "deliveryType": "Shipping",
+      "giftDetails": {
+        "giftWrapCode": "Y"
+      },
+      "associateDetails": [
+        {
+          "associateId": "71115670"
+        }
+      ],
+      "sellingChannelType": "MCOM",
+      "shippingInfo": {
+        "firstName": "Jay",
+        "lastName": "Smith",
+        "addressLine1": "7600 Main Avenue",
+        "addressLine2": "H9",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zipCode": "19118",
+        "country": "US",
+        "countryCode": "123",
+        "mobilePhone": "6102836927"
+      },
+      "unitPrice": "500",
+      "orderLineCharges": [
+        {
+          "chargeCategory": "DISCOUNT",
+          "chargeType": "DISCOUNT",
+          "chargeName": "From Zola",
+          "chargePerUnit": "4.10",
+          "chargePerLine": "4.10",
+          "chargeAmount": "4.10",
+          "associateId": "7100027"
+        }
+      ],
+      "orderLineTaxes": [],
+      "orderLineTaxExcemptions": [],
+      "upcNumber": "96018061188",
+      "productAdditionalAttributes": {
+        "productDesc": "Lenox Federal Platinum All Purpose Bowl"
+      },
+      "orderHoldTypes": [],
+      "orderLineStatuses": []
+    }
+  ]
+}

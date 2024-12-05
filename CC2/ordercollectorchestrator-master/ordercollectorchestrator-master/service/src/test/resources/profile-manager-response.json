@@ -1,0 +1,115 @@
+{
+    "associateDetails": [
+        {
+            "firstName": "firstName",
+            "lastName": "lastName",
+            "associateId": "BH13008"
+        }
+    ],
+    "loyaltyDetails": [],
+    "orderId": "",
+    "sourceChannel": "ZOLA",
+    "customerOrderId": "18001",
+    "payments": [],
+    "profiles": [
+        {
+            "profileId": "AZS4"
+        },
+        {
+            "profileId": "AZ4",
+            "rules": {
+                "fraudCheckEnabled": "true",
+                "resourcingEnabled": "true",
+                "order.paymentrequest": "true",
+                "order.enrichment": "true"
+            },
+            "modificationRules": {
+                "order": {
+                    "ShipTo": "Allowed",
+                    "id": "Created",
+                    "AddLine": "Allowed",
+                    "CancelLine": "Allowed"
+                }
+            }
+        }
+    ],
+    "orderStatus": "1000",
+    "sellingChannelType": "MCOM",
+    "transactionId": "ORDER_CREATED",
+    "billingInfo": {
+        "firstName": "Zola",
+        "lastName": "Registry",
+        "zipCode": "10038",
+        "country": "US",
+        "primaryPhone": "3476809769",
+        "city": "New York",
+        "countryCode": "US",
+        "addressLine1": "150 Broadway",
+        "addressLine2": "19th Floor",
+        "state": "NY"
+    },
+    "orderLines": [
+        {
+            "orderLineTaxes": [],
+            "upcNumber": "91709271846",
+            "associateDetails": [],
+            "orderId": "",
+            "deliveryMethod": "Ground",
+            "shippingInfo": {
+                "firstName": "Customer",
+                "lastName": "Name",
+                "zipCode": "19118",
+                "country": "US",
+                "mobilePhone": "6102836927",
+                "city": "Philadelphia",
+                "countryCode": "123",
+                "addressLine1": "7600 Main Avenue",
+                "addressLine2": "H9",
+                "state": "PA"
+            },
+            "sellingChannelType": "MCOM",
+            "minLineStatusDesc": "Created",
+            "productAdditionalAttributes": {
+                "productDesc": "Coleman - SunDome 3-Person Tent"
+            },
+            "orderLineCharges": [],
+            "maxLineStatusDesc": "Created",
+            "reservationId": "607188645",
+            "orderLineStatuses": [
+                {
+                    "statusDesc": "Created",
+                    "totalQuantity": "6",
+                    "action": "ADD",
+                    "statusCode": "1000",
+                    "statusQuantity": "6"
+                }
+            ],
+            "action": "ADD",
+            "orderHoldTypes": [],
+            "marketingPartnerId": "ZOLA",
+            "unitPrice": "80.59",
+            "lastUpdatedBy": "ordercollect",
+            "minLineStatusCode": "1000",
+            "deliveryType": "Shipping",
+            "lineId": 1,
+            "orderedQty": "6",
+            "createdTs": "2019-11-22T06:39:22.521000000Z",
+            "orderLineTaxExemptions": [],
+            "giftDetails": {
+                "giftMessage": "All my love, Grandma"
+            },
+            "createdBy": "ordercollect",
+            "profileId": "AZS4",
+            "lastUpdatedTs": "2019-11-22T06:39:22.521000000Z",
+            "maxLineStatusCode": "1000",
+            "originalOrderedQty": "6"
+        }
+    ],
+    "orderChannelDivision": "71",
+    "profileId": "AZ4",
+    "action": "ADD",
+    "orderChannelStore": "128",
+    "orderDate": "2018-01-30T16:30:00Z",
+    "orderLocation": "7265",
+    "sellerOrderId": "18025"
+}

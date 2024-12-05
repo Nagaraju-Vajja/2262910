@@ -1,0 +1,12 @@
+[
+  {
+    "attributeName": "accountNumber",
+    "attributeType": "JSON",
+    "dataMaskerClassFQN": "com.macys.uop.foundation.core.utils.masking.CreditCardNumberMasker"
+  },
+  {
+    "attributeName": "accountNumber",
+    "attributeType": "XML",
+    "dataMaskerClassFQN": "com.macys.uop.foundation.core.utils.masking.CreditCardNumberMasker"
+  }
+]

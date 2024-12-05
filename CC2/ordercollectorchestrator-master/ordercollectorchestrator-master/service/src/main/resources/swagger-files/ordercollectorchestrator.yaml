@@ -1,0 +1,122 @@
+{
+  "swagger": "2.0",
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "Bearer": {
+      "in": "header",
+      "name": "Authorization",
+      "description": "",
+      "type": "apiKey"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [
+      ]
+    }
+  ],
+  "basePath": "/ordercollectorchestrator",
+  "host": "0.0.0.0",
+  "schemes": [
+    "http"
+  ],
+  "info": {
+    "title": "ordercollectorchestrator",
+    "version": "1.0",
+    "description": "This API is for ordercollectorchestrator service.",
+    "contact": {
+      "name": "Macys",
+      "url": "http://api.macys.com",
+      "email": "api@macys.com"
+    },
+    "license": {
+      "name": "Proprietary",
+      "url": "http://license.macys.com"
+    }
+  },
+  "paths": {
+    "/v1/orders": {
+      "post": {
+        "operationId": "collectOrder",
+        "description": "Collect order",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "orderRequest",
+            "description": "Order request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Order"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Status"
+            }
+          }
+        }
+      }
+    },
+  "/v1/lock/orders": {
+    "post": {
+      "operationId": "checkResponse",
+      "description": "Check response",
+      "consumes": [
+          "application/json"
+      ],
+      "produces": [
+          "application/json"
+      ],
+      "parameters": [
+        {
+          "in": "body",
+          "name": "fraudResponse",
+          "description": "Fraud response",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/Order"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK",
+          "schema": {
+            "$ref": "#/definitions/Status"
+          }
+        }
+      }
+    }
+  }
+},
+  "definitions": {
+    "Order": {
+      "description": "",
+      "type": "object",
+      "properties": {
+      },
+      "x-model-class": "com.macys.uop.order.model.Order"
+    },
+    "Status": {
+       "description": "",
+       "type": "object",
+       "properties": {
+      },
+      "x-model-class": "com.macys.uop.common.commonlib.Status"
+    }
+  }
+}
